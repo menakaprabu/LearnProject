@@ -1,6 +1,6 @@
 <html>
 <body onload='document.loginForm.username.focus();'>
-    <h1>Spring Security 5 - Login Form</h1>
+    <h1>Spring boot - Login Form</h1>
 
     <c:if test="${not empty errorMessge}"><div style="color:red; font-weight: bold; margin: 30px 0px;">${errorMessge}</div></c:if>
 

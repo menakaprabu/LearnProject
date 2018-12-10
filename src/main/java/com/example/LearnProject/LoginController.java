@@ -53,4 +53,14 @@ public class LoginController {
         return model;
     }
 
+
+    @RequestMapping(value="cvscalculator", method=RequestMethod.POST)
+    public String cvscalculator(@RequestParam("capacity")String capacity ){
+
+        System.out.println("Capacity ================================== "+capacity);
+
+        return ("You have entered the capacity as = "+capacity+ "\n" + " Capacity *2 = "+(Integer.parseInt(capacity)*2));
+
+    }
+
 }
